@@ -53,7 +53,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Huzairul Shazmey</h1>
-      <p>I'm a <span class="typed" data-typed-items="Frontend Developer, UI/UX Designer"></span></p>
+      <p>I'm a <span class="typed" data-typed-items="Web Developer, UI/UX Designer"></span></p>
       <br><a class="button" href="assets/img/Resume - Huzairul Shazmey.pdf">Download Resume</a>
     </div>
   </section><!-- End Hero -->
@@ -66,14 +66,13 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p class="fst-italic"style="text-align: justify;">Greetings! I'm Huzairul Shazmey.
-          
-          Professionally, I am deeply rooted in the world of front-end development. Crafting, optimizing, and bringing websites to
-          life is where my expertise lies. I revel in the challenge of taking designs and converting them into interactive digital
-          experiences, ensuring each website is not only functional but also responsive to every device it graces.
-          Away from the code, my feet lead me to nature's trails. Hiking isn't just a pastime for me; it's a journey of reflection
-          and rejuvenation. Just as I untangle lines of code in my day job, the trails offer me a chance to navigate through
-          nature's maze, embracing the challenge of every ascent and the tranquility of every plateau.
+          <p class="fst-italic"style="text-align: justify;"><b>Greetings! 
+            I'm Huzairul Shazmey,</b> a passionate front-end developer dedicated to creating seamless and engaging digital experiences. My expertise lies in transforming complex designs into interactive, user-friendly interfaces, ensuring optimal functionality and responsiveness across all devices. With a keen eye for detail and a commitment to innovation, I thrive on crafting solutions that merge aesthetics with performance.
+          </p>
+          </br>
+          <p class="fst-italic"style="text-align: justify;">
+            Beyond the screen, I find inspiration in the great outdoors. Hiking offers me a space for reflection and growth, mirroring the problem-solving nature of my work. Each trail, with its challenges and rewards, fuels my creativity and reminds me of the value of perseverance and perspective.
+            Let’s build something remarkable together!
           
           </p>
         </div>
@@ -83,27 +82,23 @@
             <img src="assets/img/huzairul.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Front-end Developer &amp; UI/UX Designer</h3>
-            <p class="fst-italic">
-              Speaking of vision, my current mission is clear and ambitious: to develop an application that democratizes learning. I
-              envision a platform where anyone, regardless of their socio-economic background, can access and benefit from free
-              courses. This isn't just a project; it's a step towards a world where education and opportunity are universal.
+            <h3>Web Developer &amp; UI/UX Designer</h3>
+            <p class="fst-italic" style="text-align: justify;">
+              My mission is clear and ambitious: to develop an system that tracks and improves health across Malaysia. I envision a platform where individuals can monitor their health routines, food intake, and medicine usage, all in one place. This system will be accessible to everyone, free of charge, empowering users to take control of their well-being. This isn't just a project; it's a step toward a healthier future where people have the tools and knowledge to live their best lives.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>9 April 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://huzairulshazmey.vercel.app</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+60 123024855</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Selangor, Malaysia</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span class="blur-effect">huzairulshazmey00@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span class="blur-effect">+60 123024855</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span class="blur-effect">Selangor, Malaysia</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Diploma </span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>huzairulshazmey00@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span class="blur-effect" id="age">24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span class="blur-effect">Diploma </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span class="blur-effect">Available</span></li>
                 </ul>
               </div>
             </div>
@@ -449,9 +444,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>Vision & Mission</h6>
-          <p class="text-justify">Speaking of vision, my current mission is clear and ambitious: to develop an application that democratizes learning. I
-          envision a platform where anyone, regardless of their socio-economic background, can access and benefit from free
-          courses. This isn't just a project; it's a step towards a world where education and opportunity are universal.
+          <p class="text-justify">to develop an system that tracks and improves health across Malaysia. I envision a platform where individuals can monitor their health routines, food intake, and medicine usage, all in one place. This system will be accessible to everyone, free of charge, empowering users to take control of their well-being. This isn't just a project; it's a step toward a healthier future where people have the tools and knowledge to live their best lives.
 </p>
         </div>
   
@@ -510,6 +503,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tahunLahir = 2000; 
+  const tahunSemasa = new Date().getFullYear(); 
+  const umur = tahunSemasa - tahunLahir; 
+
+  document.getElementById('age').textContent = umur; 
+});
+</script>
 
 </body>
 

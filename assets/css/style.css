@@ -1519,3 +1519,12 @@ section {
   height: 50px;
   margin: 0 40px;
 }
+
+.blur-effect {
+  filter: blur(4px); /* Initial blur effect */
+  transition: filter 0.3s ease; /* Smooth transition for the unblur effect */
+}
+
+.blur-effect:hover {
+  filter: blur(0); /* Remove blur on hover */
+}
